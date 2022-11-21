@@ -1,0 +1,108 @@
+format = "$all $directory $character"
+
+[character]
+success_symbol = "[✓](bold green)"
+error_symbol = "[✗](bold red)"
+vimcmd_symbol = "[✓](bold green)"
+
+[time]
+disabled = false
+style = "bold white"
+format = "[$time]($style)"
+
+[git_commit]
+tag_symbol = " tag "
+
+[git_status]
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+read_only = " "
+truncation_length = 2
+style = "purple bold"
+format = " [$path]($style)[$read_only]($read_only_style) "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[meson]
+symbol = "喝 "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "ﳒ "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[spack]
+symbol = "🅢 "
