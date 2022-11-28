@@ -1,17 +1,20 @@
 scoop
 
 7zip
-zotero
 gpg4win
 keepassxc
 powertoys
 signal
 spotify
 Steam
+zotero
 
-liberica-full-lts-jdk
-nvm
-git
 gh
+git
+latex
+liberica-full-lts-jdk
 neovim
+nvm
+perl
 python311
+tectonic
