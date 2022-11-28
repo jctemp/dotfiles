@@ -1,0 +1,17 @@
+scoop
+
+7zip
+zotero
+gpg4win
+keepassxc
+powertoys
+signal
+spotify
+Steam
+
+liberica-full-lts-jdk
+nvm
+git
+gh
+neovim
+python311
