@@ -1,0 +1,16 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Jamie Temple
+	email = jamie-temple@live.de
+	signingkey = 27621495271F926F
+[gpg]
+	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
+[core]
+	editor = code
+	autocrlf = true
+[init]
+	defaultBranch = main
