@@ -1,21 +1,3 @@
-# INSTALL RUST
-if (-Not (Get-Command rustup -ErrorAction SilentlyContinue)) {
-    $Uri = "https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc"
-    $Filename = "rustup-init.exe"
-
-    Write-Host "[Rust]: Downloading installer..."
-    Invoke-WebRequest -Uri "$Uri/$Filename" -OutFile "$PWD/$Filename"
-    
-    Write-Host "[Rust]: Start installer..."
-    Start-Process -FilePath "$PWD/$Filename" -ArgumentList "-y" -WindowStyle Hidden -Wait
-
-    Write-Host "[Rust] Installed." -ForegroundColor Green
-    Remove-Item -Force -Path "$PWD/$Filename"
-}
-else {
-    Write-Host "[Rust] Already installed." -ForegroundColor Green
-}
-
 # INSTALL SCOOP
 if (-Not (Get-Command scoop -ErrorAction SilentlyContinue)) {
     $Uri = "https://get.scoop.sh"
@@ -62,5 +44,6 @@ if (!(Test-Path -Path $Folder)) {
 
 Copy-Item ".\templates\starship.toml" $Folder
 Copy-Item ".\templates\powershell-profile.ps1" $PROFILE
+Copy-Item ".\templates\.gitconfig" $ENV:USERPROFILE
 
 . $PROFILE

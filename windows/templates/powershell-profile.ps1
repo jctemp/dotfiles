@@ -4,6 +4,10 @@ function Confirm-Command($name) {
     return $null -ne (Get-Command $name 2> $null)
 }
 
+function export($name, $value) {
+    Set-Item -path "env:$name" -value $value;
+}
+
 # ---------------------------------------------------------------------------------------
 # IMPORT MODULES
 Import-Module -Name Terminal-Icons
@@ -31,19 +35,6 @@ $pathContent = [Environment]::GetEnvironmentVariable("path")
 if ((Confirm-Command cargo) -and !($pathContent -split ';' -contains "$HOME\.cargo\bin")) {
     $env:Path += ";$HOME\.cargo\bin"
 }
-
-# ---------------------------------------------------------------------------------------
-# ALIAS
-
-function export($name, $value) {
-    set-item -path "env:$name" -value $value;
-}
-
-if (Confirm-Command bat)  { Set-Alias cat bat -Force -Option AllScope }
-if (Confirm-Command btm)  { Set-Alias top btm -Force -Option AllScope }
-if (Confirm-Command dust) { Set-Alias du dust -Force -Option AllScope }
-if (Confirm-Command fd)   { Set-Alias find fd -Force -Option AllScope }
-if (Confirm-Command rg)   { Set-Alias grep rg -Force -Option AllScope }
 
 # ---------------------------------------------------------------------------------------
 # PRETTY CLI

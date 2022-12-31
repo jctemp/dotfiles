@@ -8,8 +8,10 @@ Google.Chrome
 Google.Drive
 KeePassXCTeam.KeePassXC
 Microsoft.PowerToys
+OBSProject.OBSStudio
 OpenWhisperSystems.Signal
 Spotify.Spotify
+TorProject.TorBrowser
 Valve.Steam
 
 BellSoft.LibericaJDK.18.Full
@@ -21,6 +23,8 @@ JohnMacFarlane.Pandoc
 Microsoft.VisualStudio.2022.Community
 Microsoft.VisualStudioCode
 Neovim.Neovim
+o2sh.onefetch
 Python.Python.3.11
+Rustlang.Rustup
 StrawberryPerl.StrawberryPerl
 TUG.TeXworks

@@ -35,14 +35,3 @@ if ($PackageManager.ToLower() -eq "scoop") {
         }
     }
 }
-
-
-
-return
-
-
-
-
-else {
-    Write-Host "Cannot install apps." -ForegroundColor Red
-}
